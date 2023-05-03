@@ -30,6 +30,7 @@ import {
       const creditsEndpoint = `${API_URL}movie/${movieId}/credits?api_key=${API_KEY}`;
       return await (await fetch(creditsEndpoint)).json();
     },
+
     // Bonus material below for login
     getRequestToken: async () => {
       const reqToken = await (await fetch(REQUEST_TOKEN_URL)).json();
@@ -41,6 +42,7 @@ import {
         password,
         request_token: requestToken
       };
+
       // First authenticate the requestToken
       const data = await (
         await fetch(LOGIN_URL, {
@@ -48,6 +50,7 @@ import {
           body: JSON.stringify(bodyData)
         })
       ).json();
+      
       // Then get the sessionId with the requestToken
       if (data.success) {
         const sessionId = await (
