@@ -3,10 +3,10 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
     background: linear-gradient(
         to bottom, rgb(0, 0, 0, 0)
-        41%, rgba(0, 0, 0, 0.65)
+        41%, rgba(0, 0, 0, 0.70)
         100%
     ),
-    url(${({ image }) => image}), var(--darkGrey);
+    url(${({ image }) => image}), var(--medGrey);
     background-size: 100%, cover;
     background-position: center;
     height: 600px;
