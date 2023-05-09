@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
     background: linear-gradient(
-        to bottom, rgb(0, 0, 0, 0)
-        41%, rgba(0, 0, 0, 0.70)
-        100%
+      to bottom,
+      rgba(242, 132, 130, 0.20) 20%,
+      rgba(36, 1, 25, 0.90) 70%
+      
     ),
-    url(${({ image }) => image}), var(--medGrey);
+    url(${({ image }) => image}), var(--lightGrey);
     background-size: 100%, cover;
     background-position: center;
     height: 600px;
@@ -32,7 +33,7 @@ export const Content = styled.div`
 export const Text = styled.div`
     z-index: 100;
     max-Width: 700px;
-    position: aboslute;
+    position: absolute;
     bottom: 40px;
     margin-right: 20px;
     min-height: 100px;

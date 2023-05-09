@@ -1,4 +1,4 @@
-import React from "react";
-
 // Spinner
-import { Spinner } from './Spiner.styles'
+import { Spinner } from './Spiner.styles';
+
+export default Spinner;
