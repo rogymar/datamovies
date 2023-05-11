@@ -21,7 +21,7 @@ export const Content = styled.div`
         font-size: var(--fontMed);
         color: var(--otherColor);
         padding-right: 15px;
-        text-decoration-line: none;
+        text-decoration: none;
 
         @media screen and (max-width: 768px) {
             font-size: var(--fontSmall);
